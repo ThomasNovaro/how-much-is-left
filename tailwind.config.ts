@@ -8,6 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        mobile: "370px",
+        tablet: "696px",
+        laptop: "1080px",
+        notebook: "1366px",
+        desktop: "1920px",
+      },
+      fontFamily: {
+        borders: ["var(--font-outwardBorders)"],
+        block: ["var(--font-outwardBlock)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
