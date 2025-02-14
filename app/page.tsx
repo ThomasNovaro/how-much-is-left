@@ -43,7 +43,7 @@ export default function Home() {
       <Suspense fallback={<div className="text-white">Loading...</div>}>
         <ClimateClock />
       </Suspense>
-      <div className="">
+      <div className="pb-1">
         <a
           href="https://thomasnovaro.com"
           target="_blank"
