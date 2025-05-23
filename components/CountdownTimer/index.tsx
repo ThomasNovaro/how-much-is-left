@@ -51,38 +51,44 @@ const CountdownTimer: FC<CountdownTimerProps> = ({ deadline }) => {
   }, [deadline]);
 
   return (
-    <div className="font-mono text-slate-700 text-[20px] laptop:text-[25px] w-full px-20 leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center">
-      <div>
-        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
-          {timeRemaining.years}
-        </span>{" "}
-        years
+    <a
+      href="https://unfccc.int/sites/default/files/english_paris_agreement.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="font-mono text-slate-700 text-[20px] laptop:text-[25px] w-full px-20 leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center">
+        <div>
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+            {timeRemaining.years}
+          </span>{" "}
+          years
+        </div>
+        <div className="text-right">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+            {timeRemaining.days}
+          </span>{" "}
+          days
+        </div>
+        <div>
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+            {timeRemaining.hours}
+          </span>{" "}
+          hours
+        </div>
+        <div className="text-right">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+            {timeRemaining.minutes}
+          </span>{" "}
+          minutes
+        </div>
+        <div>
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+            {timeRemaining.seconds}
+          </span>{" "}
+          seconds
+        </div>
       </div>
-      <div className="text-right">
-        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
-          {timeRemaining.days}
-        </span>{" "}
-        days
-      </div>
-      <div>
-        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
-          {timeRemaining.hours}
-        </span>{" "}
-        hours
-      </div>
-      <div className="text-right">
-        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
-          {timeRemaining.minutes}
-        </span>{" "}
-        minutes
-      </div>
-      <div>
-        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
-          {timeRemaining.seconds}
-        </span>{" "}
-        seconds
-      </div>
-    </div>
+    </a>
   );
 };
 
