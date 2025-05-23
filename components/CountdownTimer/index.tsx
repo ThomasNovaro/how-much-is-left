@@ -55,6 +55,7 @@ const CountdownTimer: FC<CountdownTimerProps> = ({ deadline }) => {
       href="https://unfccc.int/sites/default/files/english_paris_agreement.pdf"
       target="_blank"
       rel="noopener noreferrer"
+      className="hover:underline decoration-red-500 decoration-8"
     >
       <div className="font-mono text-slate-700 text-[20px] laptop:text-[25px] w-full px-20 leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center">
         <div>

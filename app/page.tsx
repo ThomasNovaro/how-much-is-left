@@ -1,7 +1,5 @@
 import { Suspense } from "react";
 import CountdownTimer from "@/components/CountdownTimer";
-import Info from "@/public/info.svg";
-import Image from "next/image";
 
 async function ClimateClock() {
   const response = await fetch("https://api.climateclock.world/v2/clock.json", {
