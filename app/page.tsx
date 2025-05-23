@@ -20,7 +20,7 @@ async function ClimateClock() {
 
 export default function Home() {
   return (
-    <div className="relative bg-gradient-to-t from-blue-400 via-white to-white gap-4 text-black min-h-screen w-screen flex flex-col justify-center laptop:gap-14">
+    <div className="relative bg-gradient-to-t from-red-500 via-blue-400 to-red-white gap-4 text-black min-h-screen w-screen flex flex-col justify-center laptop:gap-14">
       <Suspense fallback={<div className="text-black">Loading...</div>}>
         <ClimateClock />
       </Suspense>

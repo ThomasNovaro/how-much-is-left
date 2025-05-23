@@ -55,35 +55,35 @@ const CountdownTimer: FC<CountdownTimerProps> = ({ deadline }) => {
       href="https://unfccc.int/sites/default/files/english_paris_agreement.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:underline decoration-red-500 decoration-8"
+      className="hover:underline decoration-red-600 decoration-8"
     >
       <div className="font-mono text-slate-700 text-[20px] laptop:text-[25px] w-full px-20 leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center">
         <div>
-          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent [text-stroke:2px_white] [-webkit-text-stroke:1.5px_white]">
             {timeRemaining.years}
           </span>{" "}
           years
         </div>
         <div className="text-right">
-          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent [text-stroke:2px_white] [-webkit-text-stroke:1.5px_white]">
             {timeRemaining.days}
           </span>{" "}
           days
         </div>
         <div>
-          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent [text-stroke:2px_white] [-webkit-text-stroke:1.5px_white]">
             {timeRemaining.hours}
           </span>{" "}
           hours
         </div>
         <div className="text-right">
-          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent [text-stroke:2px_white] [-webkit-text-stroke:1.5px_white]">
             {timeRemaining.minutes}
           </span>{" "}
           minutes
         </div>
         <div>
-          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          <span className="font-block text-[125px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent [text-stroke:2px_white] [-webkit-text-stroke:1.5px_white]">
             {timeRemaining.seconds}
           </span>{" "}
           seconds
