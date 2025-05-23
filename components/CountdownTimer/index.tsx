@@ -51,12 +51,37 @@ const CountdownTimer: FC<CountdownTimerProps> = ({ deadline }) => {
   }, [deadline]);
 
   return (
-    <div className="font-block text-[100px] uppercase leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center items-center">
-      <div>{timeRemaining.years} years</div>
-      <div>{timeRemaining.days} days</div>
-      <div>{timeRemaining.hours} hours</div>
-      <div>{timeRemaining.minutes} minutes</div>
-      <div>{timeRemaining.seconds} seconds</div>
+    <div className="font-mono text-slate-700 text-[20px] laptop:text-[25px] w-full px-20 leading-none flex flex-col laptop:flex-row laptop:gap-10 laptop:justify-center">
+      <div>
+        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          {timeRemaining.years}
+        </span>{" "}
+        years
+      </div>
+      <div className="text-right">
+        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          {timeRemaining.days}
+        </span>{" "}
+        days
+      </div>
+      <div>
+        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          {timeRemaining.hours}
+        </span>{" "}
+        hours
+      </div>
+      <div className="text-right">
+        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          {timeRemaining.minutes}
+        </span>{" "}
+        minutes
+      </div>
+      <div>
+        <span className="font-block text-[175px] laptop:text-[250px] bg-gradient-to-tl from-red-500 via-red-600 to-black bg-clip-text text-transparent">
+          {timeRemaining.seconds}
+        </span>{" "}
+        seconds
+      </div>
     </div>
   );
 };

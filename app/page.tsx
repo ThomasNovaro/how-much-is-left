@@ -22,7 +22,7 @@ async function ClimateClock() {
 
 export default function Home() {
   return (
-    <div className="relative bg-[#e43030] text-black min-h-screen w-screen flex flex-col items-center justify-center laptop:gap-14">
+    <div className="relative bg-gradient-to-t from-blue-400 via-white to-white gap-4 text-black min-h-screen w-screen flex flex-col justify-center laptop:gap-14">
       <a
         href="https://unfccc.int/sites/default/files/english_paris_agreement.pdf"
         target="_blank"
@@ -31,16 +31,15 @@ export default function Home() {
       >
         <Image src={Info} width={50} height={50} alt="info" />
       </a>
-      <h1 className="gap-5 px-5 tablet:pt-10 text-[100px] text-center tablet:flex tablet:justify-center font-[1500] font-borders w-full h-fit leading-none">
+      {/* <h1 className="px-6 tablet:pt-10 text-[25px] font-sans tablet:flex tablet:justify-center font-semibold w-full h-fit">
         <div className="flex flex-col tablet:hidden">
-          <div>how much do</div>
-          <div>we have left?</div>
+          how much ⌛ do
+          <br />
+          we have left?
         </div>
         <div className="hidden tablet:flex">how much do we have left?</div>
-      </h1>
-      {/* I want the numbers to animate when opening the page or when scrolling to this position.
-      Number are fetched through API from the countdown */}
-      <Suspense fallback={<div className="text-white">Loading...</div>}>
+      </h1> */}
+      <Suspense fallback={<div className="text-black">Loading...</div>}>
         <ClimateClock />
       </Suspense>
       <div className="pb-1">
@@ -48,7 +47,7 @@ export default function Home() {
           href="https://thomasnovaro.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-mono absolute bottom-0 left-0 right-0 text-center font-semibold text-black text-xs mb-[5px] laptop:mb-3 hover:underline decoration-black"
+          className="font-mono absolute bottom-0 left-0 right-0 text-center font-semibold text-black text-sm mb-[5px] laptop:mb-3 hover:underline decoration-black"
         >
           made by thom
         </a>

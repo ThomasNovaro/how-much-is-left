@@ -18,6 +18,8 @@ export default {
       fontFamily: {
         borders: ["var(--font-outwardBorders)"],
         block: ["var(--font-outwardBlock)"],
+        mono: ["var(--font-geist-mono)"],
+        sans: ["var(--font-geist-sans)"],
       },
       colors: {
         background: "var(--background)",
